@@ -39,7 +39,7 @@ body {
 }
 
 .cover-photo{
-    background-image: url('/images/VIT-AP.jpg'); /* Replace with your image file path */
+    background-image: url('images/VIT-AP.jpg'); /* Replace with your image file path */
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
