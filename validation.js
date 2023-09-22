@@ -1,5 +1,10 @@
 // validation.js
 
+
+// JavaScript for toggling the hamburger menu
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('notification-form');
     

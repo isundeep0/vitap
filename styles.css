@@ -1,78 +1,93 @@
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #03295a; /* Change this to your desired background color */
-    color: #fff; /* Change text color to your preference */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #03295a; /* Change this to your desired background color */
+  color: #fff; /* Change text color to your preference */
 }
 
 .logo img {
-    max-width: 170px;
-    margin-left: 30px;
-    /* Adjust the logo size as needed */
+  max-width: 170px;
+  margin-left: 30px;
+  /* Adjust the logo size as needed */
 }
 
 .nav-links {
-    display: flex;
-    gap: 20px; /* Adjust the spacing between links */
+  display: flex;
+  gap: 20px; /* Adjust the spacing between links */
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #fff; /* Link text color */
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff; /* Link text color */
+  font-weight: bold;
 }
 
 #vitap {
-    margin-left: 20px;
-    margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 40px;
 }
 
 .nav-links a:hover {
-    text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; /* Underline on hover */
 }
 
-.cover-photo{
-    background-image: url('images/VIT-AP.jpg'); /* Replace with your image file path */
-    background-size: cover;
-    background-position: left top;
-    background-repeat: no-repeat;
-    min-height: 490px; /* Adjust the height as needed */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute; /* Position it absolutely within the header */
+  top: 20px; /* Adjust top position to your preference */
+  right: 20px; /* Adjust right position to your preference */
+  z-index: 1; /* Ensure it's above other header content */
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+.cover-photo {
+  background-image: url("images/VIT-AP.jpg"); /* Replace with your image file path */
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  min-height: 490px; /* Adjust the height as needed */
 }
 
 /* ... (previous CSS code) ... */
 
 .info-section {
-    background-color: #f5f5f5; /* Background color for the info section */
-    padding: 20px;
-    text-align: center;
+  background-color: #f5f5f5; /* Background color for the info section */
+  padding: 20px;
+  text-align: center;
 }
 
-
 .colored-div {
-    background-color: #007BFF;
-    background-image: linear-gradient(rgba(5,64,137,1), rgba(25,61,105,1));
-    /* Background color for the colored div */
-    color: #fff; /* Text color for the colored div */
-    text-align: center;
-    padding: 10px;
+  background-color: #007bff;
+  background-image: linear-gradient(rgba(5, 64, 137, 1), rgba(25, 61, 105, 1));
+  /* Background color for the colored div */
+  color: #fff; /* Text color for the colored div */
+  text-align: center;
+  padding: 10px;
 }
 
 .colored-content {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .announcement-bar {
- /* Background color for the announcement bar */
-    color: #fff; /* Text color for the announcement bar */
-    padding: 10px 0;
-    /* overflow: hidden; */
+  /* Background color for the announcement bar */
+  color: #fff; /* Text color for the announcement bar */
+  padding: 10px 0;
+  /* overflow: hidden; */
 }
 
 /* .announcement-bar marquee {
@@ -80,201 +95,275 @@ body {
 } */
 
 @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
 
 /* ... (previous CSS code) ... */
 
 .horizontal-info {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff; /* Background color for the horizontal info section */
-    color: #fff; /* Text color for the horizontal info section */
-    padding: 20px;
-    
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff; /* Background color for the horizontal info section */
+  color: #fff; /* Text color for the horizontal info section */
+  padding: 20px;
 }
 
 .info-block {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
 }
 
 .info-title {
-    background-color: #fff; /* Background color for each info block title */
-    color: #000000; /* Text color for each info block title */
-    padding: 10px;
+  background-color: #fff; /* Background color for each info block title */
+  color: #000000; /* Text color for each info block title */
+  padding: 10px;
 }
 
 .info-title h3 {
-    font-size: 34px;
-    font-weight: bold;
-    margin: 0;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .info-title p {
-    font-size: 20px;
-    margin: 0;
+  font-size: 20px;
+  margin: 0;
 }
-
-
-
 
 /* Add these styles to your existing CSS or a separate CSS file */
 
 /* Style for the notification section */
 .notification-section {
-    background-color: #f5f5f5;
-    padding: 1px 20px 45px 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 0px;
+  background-color: #f5f5f5;
+  padding: 1px 20px 45px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 0px;
 }
 
 .notification-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 /* Style for form elements */
 .notification-section form {
-    display: flex;
-    flex-direction: row; /* Display form elements horizontally */
-    flex-wrap: wrap; /* Wrap to the next line if the screen is too narrow */
-    justify-content: space-between; /* Add space between form elements */
-    align-items: center; /* Vertically align form elements */
+  display: flex;
+  flex-direction: row; /* Display form elements horizontally */
+  flex-wrap: wrap; /* Wrap to the next line if the screen is too narrow */
+  justify-content: space-between; /* Add space between form elements */
+  align-items: center; /* Vertically align form elements */
 }
 
 .notification-section .form-group {
-    flex: 1; /* Each form group takes equal width */
-    margin-right: 45px; /* Add spacing between form groups */
+  flex: 1; /* Each form group takes equal width */
+  margin-right: 45px; /* Add spacing between form groups */
 }
 
 .notification-section label {
-    font-weight: bold;
-    display: block; /* Display labels on a new line */
+  font-weight: bold;
+  display: block; /* Display labels on a new line */
 }
 
 .notification-section input[type="text"],
 .notification-section input[type="email"],
 .notification-section input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .notification-section button[type="submit"] {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .notification-section button[type="submit"]:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Optional: Add styles for validation error messages */
 .notification-section .error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Footer Styles */
 
 .footer {
-    background-color: #333; /* Background color for the footer */
-    color: #fff; /* Text color for the footer */
-    padding: 30px 0;
-    font-size: 15px;
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 30px 0;
+  font-size: 15px;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-section {
-    flex: 1;
-    margin-right: 20px;
+  flex: 1;
+  margin-right: 20px;
 }
 
 .footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .footer-section p {
-    margin: 0;
+  margin: 0;
 }
 
 .footer-section ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-section ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .social {
-    flex-basis: 100px; /* Adjust the width of the social media section */
+  flex-basis: 100px; /* Adjust the width of the social media section */
 }
 
 .social a {
-    display: block;
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 .social a:hover {
-    color: #007BFF; /* Change the color on hover */
+  color: #007bff; /* Change the color on hover */
 }
 
 /* Footer Bottom Styles */
 
 .footer-bottom {
-    background-color: #222; /* Background color for the footer bottom */
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 26px;
+  background-color: #222; /* Background color for the footer bottom */
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 26px;
 }
 
 .footer-bottom p {
-    margin: 0;
+  margin: 0;
+}
+
+/* Media Queries for Header Responsiveness */
+
+/* Smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 120px;
+    margin-left: 10px;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+  /* Show the hamburger menu button */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .cover-photo {
+    min-height: 350px;
+  }
+
+  .horizontal-info {
+    flex-direction: column; /* Stack blocks vertically on smaller screens */
+    text-align: center; /* Center-align text on smaller screens */
+}
+
+.info-block {
+    margin-bottom: 20px; /* Add bottom margin to separate blocks */
+}
+
+/* Adjust font sizes for smaller screens as needed */
+.info-title h3 {
+    font-size: 28px;
+}
+
+.info-title p {
+    font-size: 18px;
+}
+
+  /* Hide the nav-links */
+
+
+  /* Additional styles for smaller screens as needed */
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 100px;
+    margin-left: 10px;
+  }
+
+  /* Show the hamburger menu button */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .info-title h3 {
+    font-size: 24px;
+}
+
+.info-title p {
+    font-size: 16px;
+}
+  /* Hide the nav-links */
+  /* Navigation links styles */
+  
+
+  /* Add more styles for mobile screens as needed */
 }
