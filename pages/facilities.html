@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facilities - VIT-AP University</title>
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../styles.css" />
+    <script src="../validation.js" defer></script>
     <style>
       /* Reset some default browser styles */
       body,
@@ -37,6 +38,27 @@
         color: #fff;
         padding: 10px 0;
         text-align: center;
+      }
+
+      .nav-links a:hover {
+        text-decoration: underline; /* Underline on hover */
+      }
+
+      .hamburger-menu {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute; /* Position it absolutely within the header */
+        top: 20px; /* Adjust top position to your preference */
+        right: 20px; /* Adjust right position to your preference */
+        z-index: 1; /* Ensure it's above other header content */
+      }
+
+      .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 3px 0;
       }
 
       /* Main content styles */
@@ -119,12 +141,126 @@
       .technology-facilities-section li strong {
         font-weight: bold;
       }
+
+      /* Base styles for larger screens */
+      /* ... (previous CSS code) ... */
+
+      /* Media Queries for Header Responsiveness */
+
+      /* Smaller screens */
+      @media (max-width: 1032px) {
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+        }
+
+        .logo img {
+          max-width: 120px;
+          margin-left: 10px;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        /* Show the hamburger menu button */
+        .hamburger-menu {
+          display: flex;
+        }
+
+        /* Add styles for hamburger menu when active */
+        .hamburger-menu.active {
+          background-color: #03295a;
+        }
+
+        .bar {
+          background-color: #fff;
+        }
+
+        .cover-photo {
+          min-height: 350px;
+        }
+
+        .horizontal-info {
+          flex-direction: column; /* Stack blocks vertically on smaller screens */
+          text-align: center; /* Center-align text on smaller screens */
+        }
+
+        .info-block {
+          margin-bottom: 20px; /* Add bottom margin to separate blocks */
+        }
+
+        /* Adjust font sizes for smaller screens as needed */
+        .info-title h3 {
+          font-size: 28px;
+        }
+
+        .info-title p {
+          font-size: 18px;
+        }
+
+        /* Show navigation links when hamburger menu is active */
+        .nav-links.active {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          right: 0;
+          top: 0;
+          background-color: transparent;
+        }
+      }
+
+      /* Mobile screens */
+      @media (max-width: 480px) {
+        .header {
+          padding: 10px;
+        }
+
+        .logo img {
+          max-width: 100px;
+          margin-left: 10px;
+        }
+
+        /* Show the hamburger menu button */
+        .hamburger-menu {
+          display: flex;
+        }
+
+        .hamburger-menu {
+          display: flex;
+        }
+
+        .info-title h3 {
+          font-size: 24px;
+        }
+
+        .info-title p {
+          font-size: 16px;
+        }
+
+        /* Hide the nav-links */
+        .nav-links {
+          display: none;
+        }
+
+        /* Additional styles for mobile screens as needed */
+      }
+
+      /* ... (continued CSS code for other sections) ... */
     </style>
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <a href="../index.html"><img src="../images/formlogo.png" alt="Logo" /></a>
+        <a href="../index.html"
+          ><img src="../images/formlogo.png" alt="Logo"
+        /></a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
       <nav class="nav-links">
         <a href="admissions.html">ADMISSIONS</a>
@@ -141,7 +277,7 @@
     </header>
 
     <main>
-      <img src="../images/stars.jpg" alt="stars jpg"  style="width: 100%;"/>
+      <img src="../images/stars.jpg" alt="stars jpg" style="width: 100%" />
 
       <section class="facilities-section">
         <h1>Facilities</h1>
@@ -157,7 +293,7 @@
         <p>
           Our campus is equipped with a wide range of facilities, including:
         </p>
-        <br>
+        <br />
         <ul>
           <li>
             <strong>Library:</strong> A vast collection of books and digital
@@ -180,7 +316,7 @@
       <section class="technology-facilities-section">
         <h2>Technology Facilities</h2>
         <p>We provide cutting-edge technology facilities, including:</p>
-        <br>
+        <br />
         <ul>
           <li>
             <strong>Computer Labs:</strong> Equipped with the latest hardware
@@ -216,7 +352,7 @@
             <li><a href="academics.html">Academics</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="about.html">About Us</a></li>
-        </ul>
+          </ul>
         </div>
         <div class="footer-section social">
           <h3>Connect with Us</h3>

@@ -54,6 +54,7 @@ body {
   background-color: #fff;
   margin: 3px 0;
 }
+
 .cover-photo {
   background-image: url("images/VIT-AP.jpg"); /* Replace with your image file path */
   background-size: cover;
@@ -284,7 +285,18 @@ body {
 /* Media Queries for Header Responsiveness */
 
 /* Smaller screens */
-@media (max-width: 768px) {
+/* Existing styles... */
+
+/* Media Queries for Header Responsiveness */
+
+/* Smaller screens */
+/* Base styles for larger screens */
+/* ... (previous CSS code) ... */
+
+/* Media Queries for Header Responsiveness */
+
+/* Smaller screens */
+@media (max-width: 1032px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -296,7 +308,6 @@ body {
     margin-left: 10px;
   }
 
-
   .nav-links {
     display: none;
   }
@@ -306,6 +317,15 @@ body {
     display: flex;
   }
 
+  /* Add styles for hamburger menu when active */
+  .hamburger-menu.active {
+    background-color: #03295a;
+  }
+
+  .bar {
+    background-color: #fff;
+  }
+
   .cover-photo {
     min-height: 350px;
   }
@@ -313,25 +333,30 @@ body {
   .horizontal-info {
     flex-direction: column; /* Stack blocks vertically on smaller screens */
     text-align: center; /* Center-align text on smaller screens */
-}
+  }
 
-.info-block {
+  .info-block {
     margin-bottom: 20px; /* Add bottom margin to separate blocks */
-}
+  }
 
-/* Adjust font sizes for smaller screens as needed */
-.info-title h3 {
+  /* Adjust font sizes for smaller screens as needed */
+  .info-title h3 {
     font-size: 28px;
-}
+  }
 
-.info-title p {
+  .info-title p {
     font-size: 18px;
-}
+  }
 
-  /* Hide the nav-links */
-
-
-  /* Additional styles for smaller screens as needed */
+  /* Show navigation links when hamburger menu is active */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+  }
 }
 
 /* Mobile screens */
@@ -356,14 +381,18 @@ body {
 
   .info-title h3 {
     font-size: 24px;
-}
+  }
 
-.info-title p {
+  .info-title p {
     font-size: 16px;
-}
-  /* Hide the nav-links */
-  /* Navigation links styles */
-  
+  }
 
-  /* Add more styles for mobile screens as needed */
+  /* Hide the nav-links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Additional styles for mobile screens as needed */
 }
+
+/* ... (continued CSS code for other sections) ... */
