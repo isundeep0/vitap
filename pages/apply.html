@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus - VIT-AP University</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="apply.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="tel"],
+      input[type="date"],
+      input[type="email"],
+      input[type="number"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .error-message {
+        color: red;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      #cancel-btn {
+        background-color: #ccc;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../images/formlogo.png" alt="Logo"
+        /></a>
+      </div>
+      <nav class="nav-links">
+        <a href="admissions.html">ADMISSIONS</a>
+        <a href="academics.html">ACADEMICS</a>
+        <a href="career.html">CAREER</a>
+        <a href="facilities.html">FACILITIES</a>
+        <a href="campus.html">CAMPUS</a>
+        <a href="research.html">RESEARCH</a>
+        <a href="about.html">ABOUT</a>
+        <div id="vitap">
+          <a href="../index.html">VIT-AP</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Admission Application</h1>
+        <form id="application-form">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required />
+            <div class="error-message" id="firstName-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required />
+            <div class="error-message" id="lastName-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+            <div class="error-message" id="phoneNumber-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required />
+            <div class="error-message" id="dob-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <div class="error-message" id="email-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            <div class="error-message" id="address-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="10thMarks">10th Marks</label>
+            <input type="number" id="10thMarks" name="10thMarks" required />
+            <div class="error-message" id="10thMarks-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="12thMarks">12th Marks</label>
+            <input type="number" id="12thMarks" name="12thMarks" required />
+            <div class="error-message" id="12thMarks-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="course">Apply for</label>
+            <select id="course" name="course" required>
+              <option value="Integrated Mtech">Integrated Mtech</option>
+              <option value="Btech">Btech</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="specialization">Specialization</label>
+            <select id="specialization" name="specialization" required>
+              <option value="">Select Specialization</option>
+            </select>
+            <div class="error-message" id="specialization-error"></div>
+          </div>
+          <div class="form-group">
+            <button type="button" id="submit-btn">Confirm</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>(Beside AP Secretariat)</p>
+          <p>Near Vijayawada, 522241</p>
+          <p>Andhra Pradesh</p>
+          <p>Email: info@vitap.ac.in</p>
+          <p>Phone: 0863 2370444</p>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h3>Connect with Us</h3>
+          <a href="https://www.facebook.com/vitap.university/" target="_blank"
+            >Facebook<i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/VITAPuniversity" target="_blank"
+            >Twitter<i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/vitap.university/" target="_blank"
+            >Instagram<i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/vit-ap/" target="_blank"
+            >LinkedIn<i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 VIT-AP University. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
