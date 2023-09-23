@@ -62,13 +62,13 @@ body {
   background-repeat: no-repeat;
   min-height: 490px; /* Adjust the height as needed */
   @media (max-width: 768px) {
-    background-size: cover;
+    background-size: contain;
     min-height: 240px;
   }
 
   /* Media Query for Mobile Phones */
   @media (max-width: 480px) {
-    background-size: cover;
+    background-size: contain;
     min-height: 160px; /* Adjust the height for smaller screens */
   }
 }
