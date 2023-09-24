@@ -143,6 +143,76 @@ body {
   margin: 0;
 }
 
+
+
+/* Styles for the Programs Offered section */
+.programs {
+  background-color: #f7f7f7; /* Background color for the section */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.program-heading h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333; /* Text color for the heading */
+}
+
+.program-heading p {
+  font-size: 18px;
+  color: #777; /* Text color for the description */
+}
+
+.program-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.program-card {
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.program-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.program-card h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.program-card p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555; /* Text color for program descriptions */
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:  #1d6bd1; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: #1692e5; /* Hover background color */
+}
+
 /* Add these styles to your existing CSS or a separate CSS file */
 
 /* Style for the notification section */
@@ -350,6 +420,13 @@ body {
   .info-title p {
     font-size: 18px;
   }
+  .program-card {
+    width: 100%; /* Make program cards full width on smaller screens */
+  }
+
+  .learn-more {
+    width: auto; /* Make the Learn More button full width on smaller screens */
+  }
 
   /* Show navigation links when hamburger menu is active */
   .nav-links.active {
@@ -393,6 +470,13 @@ body {
   /* Hide the nav-links */
   .nav-links {
     display: none;
+  }
+  .program-card {
+    width: 100%; /* Make program cards full width on smaller screens */
+  }
+
+  .learn-more {
+    width: auto; /* Make the Learn More button full width on smaller screens */
   }
 
   /* Additional styles for mobile screens as needed */
