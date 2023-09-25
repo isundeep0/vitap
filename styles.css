@@ -217,7 +217,7 @@ body {
 
 /* Style for the notification section */
 .notification-section {
-  background-color: #f5f5f5;
+  background-color: #fff;
   padding: 1px 20px 45px 20px;
   border-radius: 10px;
   text-align: center;
@@ -303,21 +303,21 @@ body {
 }
 
 .footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size:18px;
+  margin-bottom: 20px;
 }
 
 .footer-section p {
-  margin: 0;
+  margin: 5px;
 }
 
 .footer-section ul {
   list-style: none;
-  padding: 0;
+  padding: 0px;
 }
 
 .footer-section ul li {
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 
 .footer-section ul li a {
@@ -326,23 +326,26 @@ body {
 }
 
 .footer-section ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #007bff;
 }
 
 .social {
-  flex-basis: 100px; /* Adjust the width of the social media section */
+  flex-basis: 100px; 
+  /* Adjust the width of the social media section */
 }
 
 .social a {
-  display: block;
   font-size: 18px;
   color: #fff;
   text-decoration: none;
-  margin-right: 10px;
+  margin-bottom: 9px;
+  margin-right: 10px; 
 }
 
 .social a:hover {
-  color: #007bff; /* Change the color on hover */
+  color: #007bff; 
+  /* Change the color on hover */
 }
 
 /* Footer Bottom Styles */
