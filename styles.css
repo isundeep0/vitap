@@ -91,7 +91,7 @@ body {
 /* Style for the slideshow indicators */
 .slideshow-indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 0;
   right: 0;
   text-align: center;
@@ -306,7 +306,6 @@ body {
 .notification-section input[type="text"],
 .notification-section input[type="email"],
 .notification-section input[type="tel"] {
-  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -463,6 +462,9 @@ body {
   .slideshow-container {
     max-width: 80%;
   }
+  .slideshow-indicators {
+    bottom: 3px; /* Adjust the position for smaller screens */
+  }
 
 
   .horizontal-info {
@@ -496,6 +498,23 @@ body {
   .program-card {
     width: 80%;
     max-width: 320px;
+  }
+
+  .notification-section {
+    padding: 1px 10px 30px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .notification-section .form-group {
+    flex: 1 1 100%; /* Make each form group full width for screens <= 768px */
+    margin-right: 0; /* Remove spacing between form groups */
+  }
+
+  .notification-section label {
+    margin-top: 10px; /* Add margin between labels on smaller screens */
+  }
+
+  .notification-section button[type="submit"] {
+    margin-top: 20px; /* Adjust margin for the submit button */
   }
 
   /* Show navigation links when hamburger menu is active */
@@ -532,6 +551,11 @@ body {
     max-width: 90%;
   }
 
+  .dot {
+    height: 10px; /* Adjust the dot size for smaller screens */
+    width: 10px;
+    margin: 0 3px; /* Adjust the margin between dots */
+  }
   .program-heading h2 {
     font-size: 28px;
   }
@@ -548,6 +572,9 @@ body {
     font-size: 16px;
   }
 
+  .notification-section {
+    padding: 1px 10px 20px 10px; /* Adjust padding for even smaller screens */
+  }
   /* Hide the nav-links */
   .nav-links {
     display: none;
