@@ -1,12 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger-menu"); // Use a class selector
-    const nav = document.querySelector(".nav-links"); // Use a class selector
-
-    hamburger.addEventListener("click", function () {
-        nav.classList.toggle("active");
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('notification-form');
 

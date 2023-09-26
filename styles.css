@@ -55,19 +55,65 @@ body {
   margin: 3px 0;
 }
 
-.cover-photo {
-  background-image: url("images/VIT-AP.jpg"); /* Replace with your image file path */
-  background-size: cover;
-  background-position: left top;
-  background-repeat: no-repeat;
-  min-height: 490px; /* Adjust the height as needed */
 
-  /* Media Query for Mobile Phones */
-  @media (max-width: 480px) {
-    background-size: contain;
-    min-height: 124.8px; /* Adjust the height for smaller screens */
+/* Style for the slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden; /* Clip overflowing content */
+  margin: 0 auto;
+}
+
+/* Style for the individual slides */
+.mySlides {
+  display: none;
+  width: 100%;
+  animation: slide 4s infinite;
+  transform: translateX(100%); /* Start off-screen to the right */
+}
+
+/* CSS for the image transition animation */
+@keyframes slide {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  25% {
+    transform: translateX(0); /* Slide in from the left */
+  }
+  75% {
+    transform: translateX(0); /* Stay on the screen */
+  }
+  100% {
+    transform: translateX(-100%); /* Slide out to the left */
   }
 }
+
+/* Style for the slideshow indicators */
+.slideshow-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+
+
 
 /* ... (previous CSS code) ... */
 

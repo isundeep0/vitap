@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VIT-AP University</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -13,22 +16,25 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="validation.js" defer></script>
+    <script src="app.js" defer></script>
     <style>
       .hand-icon {
-      font-size: 24px; /* Adjust the size as needed */
-      color: #fff; /* Change the color */
-      margin-left: 12px;
-      margin-right: 4px;
-      /* Adjust spacing to the right */
-    }
+        font-size: 24px; /* Adjust the size as needed */
+        color: #fff; /* Change the color */
+        margin-left: 12px;
+        margin-right: 4px;
+        /* Adjust spacing to the right */
+      }
 
-    .iii {
-      font-size: 24px;
-      color: aqua;
-   
-    }
+      .iii {
+        font-size: 24px;
+        color: aqua;
+      }
     </style>
   </head>
   <body>
@@ -57,25 +63,46 @@
       </nav>
     </header>
     <main>
-      <div class="cover-photo"></div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="images/VIT-AP.jpg" alt="Slide 1" style="width: 100%" />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="images/Central-Block-scaled.jpg"
+            alt="Slide 2"
+            style="width: 100%"
+          />
+        </div>
 
+        <!-- Slideshow indicators -->
+        <div style="text-align: center" class="slideshow-indicators">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- <img src="images/VIT-AP.jpg" alt="vit-ap" style="width: 100%" />
+      <img src="images/technology-tower.jpeg" alt="vit tech tower" style="width: 100%;"> -->
       <section class="colored-div">
         <div class="colored-content">
           <div class="announcement-bar">
             <marquee behavior="scroll" direction="left">
               <!-- Announcements will move from left to right -->
               <span
-                ><b><i class="fa fa-hand-o-right hand-icon"></i></b> 5th International Conference on Advances in
-                Distributed Computing and Machine Learning(ICADCML) – 2024.
-                </span
+                ><b><i class="fa fa-hand-o-right hand-icon"></i></b> 5th
+                International Conference on Advances in Distributed Computing
+                and Machine Learning(ICADCML) – 2024.
+              </span>
+              <span
+                ><b><i class="fa fa-hand-o-right hand-icon"></i></b>
+                Advertisement for the Position of CIF (Central Instrumentation
+                Facility) Lab Technician.</span
               >
               <span
-                ><b><i class="fa fa-hand-o-right hand-icon"></i></b> Advertisement for the Position of CIF (Central
-                Instrumentation Facility) Lab Technician.</span
-              >
-              <span
-                ><b><i class="fa fa-hand-o-right hand-icon"></i></b> B.Tech., Non Engineering and Integrated MTech 2023
-                Online Withdrawal 2023</span
+                ><b><i class="fa fa-hand-o-right hand-icon"></i></b> B.Tech.,
+                Non Engineering and Integrated MTech 2023 Online Withdrawal
+                2023</span
               >
             </marquee>
           </div>
@@ -122,29 +149,32 @@
 
       <section class="programs">
         <div class="program-heading">
-            <h2>Programs Offered</h2>
-            <p>VIT-AP offers distinctive education through its undergraduate, postgraduate and PhD programmes.</p>
+          <h2>Programs Offered</h2>
+          <p>
+            VIT-AP offers distinctive education through its undergraduate,
+            postgraduate and PhD programmes.
+          </p>
         </div>
         <div class="program-cards">
-            <div class="program-card">
-                <img src="images/SCOPE-Card22.jpg" alt="Program 1">
-                <h3>VIT-AP School of Computer Science & Engineering (SCOPE) </h3>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="program-card">
-                <img src="images/SAS-Card.jpg" alt="Program 2">
-                <h3>VIT-AP School of Advanced Sciences (SAS)</h3>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="program-card">
-                <img src="images/VISH-Card_9_23.jpg" alt="Program 3">
-                <h3>VIT-AP School of Social Sciences & Humanitites (VISH)</h3>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-           
-            <!-- Add more program cards here -->
+          <div class="program-card">
+            <img src="images/SCOPE-Card22.jpg" alt="Program 1" />
+            <h3>VIT-AP School of Computer Science & Engineering (SCOPE)</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+          <div class="program-card">
+            <img src="images/SAS-Card.jpg" alt="Program 2" />
+            <h3>VIT-AP School of Advanced Sciences (SAS)</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+          <div class="program-card">
+            <img src="images/VISH-Card_9_23.jpg" alt="Program 3" />
+            <h3>VIT-AP School of Social Sciences & Humanitites (VISH)</h3>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+
+          <!-- Add more program cards here -->
         </div>
-    </section>
+      </section>
 
       <section class="notification-section">
         <h2>Get Notified</h2>
@@ -167,7 +197,6 @@
         </form>
       </section>
     </main>
-
 
     <footer class="footer">
       <div class="footer-container">
@@ -209,5 +238,9 @@
         <p>&copy; 2023 VIT-AP University. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script>
+      
+    </script>
   </body>
 </html>
