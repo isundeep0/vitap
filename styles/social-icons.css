@@ -1,0 +1,73 @@
+.hand-icon {
+  font-size: 24px; /* Adjust the size as needed */
+  color: #fff; /* Change the color */
+  margin-left: 12px;
+  margin-right: 4px;
+  /* Adjust spacing to the right */
+}
+/* Styles for the Facebook Icon */
+.fa-facebook {
+  font-size: 18px; /* Adjust the icon size */
+  color: #fff; /* Facebook blue color */
+  background: #1877f2; /* Background color for the icon */
+  border-radius: 50%; /* Create a circular shape */
+  padding: 10px; /* Adjust the padding to center the icon in the circle */
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  background: #1877f2; /* Hover background color */
+  transform: scale(1.1); /* Scale the icon on hover for an astonishing effect */
+  color: #fff; /* Change the icon color on hover */
+}
+
+/* Styles for the Twitter Icon */
+.fa-twitter {
+  font-size: 18px;
+  color: #fff; /* Twitter blue color */
+  background: #1da1f2;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.fa-twitter:hover {
+  background: #1da1f2; /* Hover background color */
+  transform: scale(1.1);
+  color: #fff;
+}
+/* Styles for the LinkedIn Icon */
+.fa-linkedin {
+  font-size: 18px;
+  color: #fff; /* LinkedIn blue color */
+  background: #0077b5;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.fa-linkedin:hover {
+  background: #0077b5; /* Hover background color */
+  transform: scale(1.1);
+  color: #fff;
+}
+
+/* Styles for the Instagram Icon */
+.fa-instagram {
+  font-size: 18px;
+  color: #fff; /* Instagram pink color */
+  background: #ec19ad;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  background: #bc2a8d; /* Hover background color */
+  transform: scale(1.1);
+  color: #fff;
+}
